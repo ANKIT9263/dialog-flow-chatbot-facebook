@@ -10,6 +10,7 @@ class WhatsApp:
             'Content-Type': 'application/json',
         }
 
-    def send_text(self, data):
+    def send_message_to_whatsapp(self, data):
         response = requests.post(self.base_url, headers=self.headers, json=data)
         return response
+
